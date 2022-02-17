@@ -1,0 +1,432 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Acá va el CSS del header */
+body {
+    padding: 100px 0px 0px;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: black;
+}
+
+
+body::-webkit-scrollbar-thumb:hover{
+    width: 20px;
+    transition: 00.5s;
+}
+
+header {
+    background-color: rgba(17,21,23,255);
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+.menu {
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+}
+.Artemis_Logo {
+    height: 100px;
+    padding: 0px 15px;
+}
+ul.Nav {
+    padding: 0px 20px;
+}
+ul.Nav li {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+    width: max-content;
+}
+ul.Nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+}
+.Nav a::after{
+    display: block;
+    content: "";/* el content lo agrego para que se active el pseudoelemento, si no, no muestra nada */
+    width: 0%;
+    background: #ffffff;
+    height: 5px;
+    bottom: 0;
+    position: absolute;
+}
+.Nav a:hover::after,
+.Nav a:active::after, 
+.Nav a:focus::after {
+    transition: 0.3s;
+    width: 100%;
+    color: #ababab;
+    cursor: pointer;
+}
+.Nav a.active::after {
+    width: 100%;
+}
+section.Home_section {
+    background: url(../Images/Artemis_botella.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sec_galery, 
+#sec_contact,
+.section-recetas {
+    background: url(../Images/Artemis_botella.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: max-content;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+}
+.boton {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    line-height: 100px;
+    padding: 0 20px;
+    display: none;
+}
+
+section {
+    background-image: url(../Images/Artemis_botella.jpg);
+    height: calc(100vh - 166px);
+    background-size: cover;
+    background-position: top;
+    
+}
+
+
+/* Acá va el CSS del footer */
+footer {
+    background-color: rgba(17,21,23,255);
+    height: max-content;
+    position: relative;
+}
+.social-media,
+.aclaraciones {
+    display: flex;
+}
+.aclaraciones {
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+    width: 50%;
+}
+.social-media { 
+    float:right;
+}
+.fa-instagram { 
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    margin-right: 5px;
+    transition: .2s linear;
+}
+.fa-instagram:hover { 
+    transform: scale(1.1);
+}
+#autor,
+#copyright {
+    padding: 0px 10px;
+    position: relative;
+    color: white;
+    display: flex;
+    clear:left;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10px;
+}
+
+/* Acá va el CSS de la galería */
+.Video {
+    position: block;
+    text-align: center;
+}
+
+.Video h2 {
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+}
+
+.galeria_principal {
+    background-color: rgba(17,21,23,0.8);
+    width: 80%;
+    margin:0px auto;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+.galeria_principal img,
+.galeria_principal video {
+    padding: 10px 2px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.galeria_principal a:hover img,
+.galeria_principal a:hover video{
+    transform: scale(1.1);
+}
+
+.galeria_target {
+    transform: scale(0);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 1001;
+}
+.galeria_target img, 
+.galeria_target video{
+    max-height: 70%;
+}
+
+.galeria_target:target {
+    transform: scale(1);
+}
+
+.close-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgba(17,21,23,0.8);
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.flecha {
+    color: white;
+    background-color: rgba(17,21,23,0.8);
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 30px;
+    transition: 0.2s linear;
+}
+
+.flecha:hover {
+    transform: scale(1.05);
+}
+
+/* Acá va el CSS de RECETAS con GRID */
+.grid-container {
+    display: grid;
+    border: 5px solid blue;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(6, 100px);
+    padding-top: 20px;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    overflow: auto;
+}
+.grid-item {
+    border: 5px solid blue;
+}
+.grid-item:first-child {
+    grid-column: 1 / 3;
+    text-align: center;
+    align-self: end;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+
+/* Acá va el CSS del Form */
+
+.Cont_titulo {
+    padding-top: 20px;
+}
+.titulo {
+    margin: 0px auto;
+    padding: 1px 5px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    color: white;
+    width: max-content;
+    background-color: rgba(17,21,23,0.8);
+}
+.formulario {
+    margin: 0px auto;
+    width: 600px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    line-height: 200%;
+    background-color: rgba(17,21,23,0.8);
+}
+.Main_form {
+    text-align: center;
+}
+.Main_form input {
+    display: block;
+    margin: 0px auto;
+}
+
+.radio {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.radio label {
+    padding-right: 10px;
+}
+
+.fselect {
+    text-align: center;
+    margin: 0px auto;
+    display: flex;
+    width: max-content;
+}
+#fselect {
+    margin-left: 10px;
+}
+
+#fcoments {
+    display: block;
+    margin: 10px auto;
+    font-family: sans-serif;
+    padding: 5px
+}
+
+.fcheck {
+    text-align: center;
+}
+.fcheck input{
+    margin-left: 5px;
+}
+
+.botones {
+    margin: 0px auto;
+    width: max-content;
+}
+
+.botones input{
+    margin: 0px 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 80px 0px 0px;
+    }
+    .Artemis_Logo {
+        height: 80px;
+        padding: 0px 10px;
+    }
+    ul.Nav {
+        padding: 0px 15px;
+    }
+    ul.Nav li {
+        line-height: 80px;
+    }
+    ul.Nav li a{
+        font-size: 24px;
+        border-radius: 8px;
+        padding: 8px
+    }    
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 50px 0px 0px;
+    }
+    .Artemis_Logo {
+        height: 50px;
+        padding: 0px 10px;
+    }
+    ul.Nav {
+        padding: 0px 15px;
+    }
+    ul.Nav li {
+        line-height: 50px;
+    }
+    ul.Nav li a{
+        font-size: 14.5px;
+        border-radius: 8px;
+        padding: 8px
+    }    
+}
+
+@media (max-width: 500px) {
+    body {
+        padding-top: 50px;
+    }
+    .Artemis_Logo {
+        height: 50px;
+        padding: 0px 5px;
+    }
+    ul.Nav {
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #2e2e2e;
+        position: fixed;
+        left: 0px;
+        top: 50px;
+        width: 100%;
+        height: calc(100vh-50px);
+        align-items: center;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.5s;
+    }
+    ul.Nav li a{
+        font-size: 12px;
+        border-radius: 5px;
+        padding: 2px
+    }
+    .Nav a:hover,
+    .Nav a:active, 
+    .Nav a:focus {
+        text-decoration: none;
+        color: #ababab;
+        border-style: none;
+    }
+    .Nav a.active {
+        text-decoration: none;
+        color: #ababab;
+    }
+    .boton {
+        line-height: 50px;
+        display: block;
+    }
+    .nav.visible {
+        left: 0%;
+    }
+
+}
