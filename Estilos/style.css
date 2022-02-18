@@ -9,9 +9,11 @@
 body {
     padding: 100px 0px 0px;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar,
+header::-webkit-scrollbar {
     width: 7px;
     background-color: black;
+    color: white;
 }
 
 
@@ -90,9 +92,10 @@ section.Home_section {
     background: url(../Images/Artemis_botella.jpg) no-repeat;
     background-size: cover;
     background-position: top center;
-    height: max-content;
+    height: 100 vh;
     margin: 0px;
     padding: 0px 0px 10px 0px;
+    overflow: auto;
 }
 .boton {
     color: white;
@@ -245,7 +248,7 @@ footer {
     display: grid;
     border: 5px solid blue;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: repeat(6, 100px);
+    grid-template-rows: repeat(6, max-height);
     padding-top: 20px;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -253,6 +256,17 @@ footer {
 }
 .grid-item {
     border: 5px solid blue;
+}
+
+.grid-item img{
+    height: 150px;
+}
+
+#fotorec1,
+#fotorec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .grid-item:first-child {
     grid-column: 1 / 3;
