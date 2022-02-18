@@ -16,12 +16,12 @@
     <body>
         <header>
             <nav class="menu">
-                <img class="Artemis_Logo" src="./Images/Artemis Negro 2.png" alt="Logo Artemis">
+                <a href="./index.html"><img class="Artemis_Logo animate__animated animate__fadeIn" src="./Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
                 <button class="boton">
-                    <i class="fas fa-bars"></i>
+                    <a href="#nav-target"><i class="fas fa-bars"></i></a>
                 </button>
-                <ul class="Nav Nav-visible">
-                    <li><a class="active" href="#">Home</a></li>
+                <ul class="Nav Nav-visible animate__animated animate__fadeIn">
+                    <li><a class="active" href="./index.html">Home</a></li>
                     <li><a href="./Páginas/nuestro-gin.html">Nuestro Gin</a></li>
                     <li><a href="./Páginas/galería.html">Galería</a></li>
                     <li><a href="./Páginas/recetas.html">Recetas</a></li>
@@ -29,7 +29,8 @@
                 </ul>
             </nav>              
         </header>
-        <div class="Nav-responsive">
+        <div class="Nav-responsive" id="nav-target">
+            <a href="#" class="close-button">X</a>
             <ul>
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="./Páginas/nuestro-gin.html">Nuestro Gin</a></li>

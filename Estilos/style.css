@@ -77,8 +77,36 @@ ul.Nav li a{
 .Nav a.active::after {
     width: 100%;
 }
-.Nav-responsive {
-    display: none;
+
+.Nav-visible.animate__animated.animate__fadeIn {
+    animation-delay: 0.5s;
+}
+.Nav-responsive { 
+    transform: scale(0);
+    position: fixed;
+    font-family: 'Bebas Neue', cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+
+}
+.Nav-responsive ul a {
+    text-decoration: none;
+    color: white;
+}
+.Nav-responsive ul {
+    list-style: none;
+    font-size: 50px;
+}
+.Nav-responsive:target {
+    display: flex;
+    background-color: rgba(17,21,23,0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    transform: scale(1);
+
 }
 
 section.Home_section {
@@ -102,13 +130,22 @@ section.Home_section {
     overflow: auto;
 }
 .boton {
-    color: white;
     background: none;
     border: none;
     font-size: 30px;
     line-height: 100px;
     padding: 0 20px;
     display: none;
+    transition: all 0.5s;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
 }
 
 section {
