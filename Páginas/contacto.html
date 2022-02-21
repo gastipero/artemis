@@ -11,15 +11,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body>
         <header>
             <nav class="menu">
-                <img class="Artemis_Logo" src="../Images/Artemis Negro 2.png" alt="Logo Artemis">
+                <a href="../index.html"><img class="Artemis_Logo animate__animated animate__fadeIn" src="../Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
                 <button class="boton">
-                    <i class="fas fa-bars"></i>
+                    <a href="#nav-target"><i class="fas fa-bars"></i></a>
                 </button>
-                <ul class="Nav Nav-visible">
+                <ul class="Nav Nav-visible animate__animated animate__fadeIn">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../Páginas/nuestro-gin.html">Nuestro Gin</a></li>
                     <li><a href="../Páginas/galería.html">Galería</a></li>
@@ -28,6 +29,16 @@
                 </ul>
             </nav>              
         </header>
+        <div class="Nav-responsive" id="nav-target">
+            <a href="#" class="close-button">X</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Páginas/nuestro-gin.html">Nuestro Gin</a></li>
+                <li><a href="../Páginas/galería.html">Galería</a></li>
+                <li><a href="../Páginas/recetas.html">Recetas</a></li>
+                <li><a class="active" href="../Páginas/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
         <section id="sec_contact">
             <div class="Cont_titulo">
                 <h2 class="titulo">Contactanos!</h2>

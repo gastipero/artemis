@@ -109,7 +109,8 @@ ul.Nav li a{
 
 }
 
-section.Home_section {
+section.Home_section,
+.section-recetas {
     background: url(../Images/Artemis_botella.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -119,8 +120,7 @@ section.Home_section {
 }
 
 #sec_galery, 
-#sec_contact,
-.section-recetas {
+#sec_contact {
     background: url(../Images/Artemis_botella.jpg) no-repeat;
     background-size: cover;
     background-position: top center;
@@ -148,7 +148,8 @@ section.Home_section {
     color: white;
 }
 
-section {
+section,
+main.grid-container2 {
     background-image: url(../Images/Artemis_botella.jpg);
     height: calc(100vh - 166px);
     background-size: cover;
@@ -198,6 +199,52 @@ footer {
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
     font-size: 10px;
+}
+
+/* Acá va el CSS de Nuestro gin con Grid*/
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4, max-content);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.grid-item2 {
+    background-color: rgba(17,21,23,0.8);
+    border-style: solid;
+}
+
+.grid-item2 a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    justify-content: center;
+}
+
+.grid-item2 a:hover {
+    color: rgb(114, 114, 114);
+    font-size: 22px;
+}
+
+.grid-item2:first-child {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.grid-item2.ingredientes2 {
+    grid-row-start: 3;
+}
+
+.grid-item2.ingredientes3 {
+    grid-row-start: 4;
 }
 
 /* Acá va el CSS de la galería */
@@ -287,7 +334,6 @@ footer {
 /* Acá va el CSS de RECETAS con GRID */
 .grid-container {
     display: grid;
-    border: 5px solid blue;
     grid-template-columns: 5fr 1fr;
     grid-template-rows: repeat(6, max-height);
     padding-top: 20px;
