@@ -200,6 +200,87 @@ footer {
     font-family: 'Bebas Neue', cursive;
     font-size: 10px;
 }
+/* Acá va el CSS del index con Grid */
+
+.grid-home {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+    grid-template-rows: repeat(5, max-content);
+    gap: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.grid-home-item {
+    border-color: #2e2e2e;
+    border-style: solid;
+    background-color: rgba(17,21,23,0.8);
+    color: white;
+}
+
+.grid-home-item.description {
+    grid-column: 2 / 5;
+    margin-top: 20px;
+    font-size: 40px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.grid-home-item.botella {
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.grid-home-item.botella span{
+    font-size: 50px;
+}
+
+.grid-home-item.botellaIMG {
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-home-item.botellaIMG img{
+    width: 80%;    
+}
+
+.grid-home-item.cata {
+    grid-column: 2 / 5;
+}
+
+.grid-home-item.ingredientes {
+    grid-column: 2 / 5;
+}
+
+.grid-home-item.contacto {
+    grid-column: 2 / 5;
+}
+
+.grid-home-item.ingredientes {
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, max-content);
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 60px;
+}
+
+.grid-ingredientes {
+    color: black;
+
+}
+.grid-ingredientes img{ 
+    width: 100px;
+}
+
+
 
 /* Acá va el CSS de Nuestro gin con Grid*/
 
@@ -453,7 +534,7 @@ footer {
     font-size: 15px;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     body {
         padding: 80px 0px 0px;
     }
@@ -472,9 +553,22 @@ footer {
         border-radius: 8px;
         padding: 8px
     }    
+    .grid-home-item.botella span{
+        font-size: 40px;
+    }
+    .grid-home-item.description {
+        font-size: 30px;
+    }
+    
+    .grid-ingredientes img{ 
+        width: 60px;
+    }
+    .grid-ingredientes { 
+        font-size: 18px;
+    }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         padding: 50px 0px 0px;
     }
@@ -492,10 +586,24 @@ footer {
         font-size: 14.5px;
         border-radius: 8px;
         padding: 8px
-    }    
+    }
+    
+    .grid-home-item.botella span{
+        font-size: 20px;
+    }
+    .grid-home-item {
+        font-size: 15px;
+    }
+    .grid-home-item.description {
+        font-size: 20px;
+    }
+    .grid-ingredientes { 
+        font-size: 15px;
+    }
+    
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 600px) {
     body {
         padding-top: 50px;
     }
@@ -541,5 +649,28 @@ footer {
     .nav.visible {
         left: 0%;
     }
+        
+    .grid-home-item.botella span{
+        font-size: 15px;
+    }
+    .grid-home-item {
+        font-size: 15px;
+    }
+    .grid-home-item.description {
+        font-size: 10px;
+    }
+    .grid-ingredientes { 
+        font-size: 8px;
+    }
+    .grid-ingredientes img{ 
+        width: 40px;
+    }
 
+    .aclaraciones {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .fa-instagram { 
+        font-size: 35px;
+    }
 }
