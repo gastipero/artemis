@@ -6,64 +6,94 @@
         <meta name="keywords" content="Artemis, Gin, Handcrafted, bebida, alcohol, escabio">
         <meta name="description" content="Página oficial de Artemis Handcrafted Gin.">
         <title>Artemis Handcrafted Gin - Home</title> 
-        <link rel="stylesheet" href="./Estilos/style.css">
+        <!-- <link rel="stylesheet" href="./Estilos/style.css"> -->
+        <link rel="stylesheet" href="./Estilos/style-con-bootstrap.css">
         <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
         <script src="https://kit.fontawesome.com/41d6bd0b26.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+         <!-- Bootstrap CSS -->
+        <link href="./bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     </head>
     <body>
-        <header>
-            <nav class="menu">
-                <a href="./index.html"><img class="Artemis_Logo animate__animated animate__fadeIn" src="./Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
-                <button class="boton">
-                    <a href="#nav-target"><i class="fas fa-bars"></i></a>
-                </button>
-                <ul class="Nav Nav-visible animate__animated animate__fadeIn">
-                    <li><a class="active" href="./index.html">Home</a></li>
-                    <li><a href="./Páginas/nuestro-gin.html">Nuestro Gin</a></li>
-                    <li><a href="./Páginas/galería.html">Galería</a></li>
-                    <li><a href="./Páginas/recetas.html">Recetas</a></li>
-                    <li><a href="./Páginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>              
-        </header>
-        <div class="Nav-responsive" id="nav-target">
-            <a href="#" class="close-button">X</a>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="./Páginas/nuestro-gin.html">Nuestro Gin</a></li>
-                <li><a href="./Páginas/galería.html">Galería</a></li>
-                <li><a href="./Páginas/recetas.html">Recetas</a></li>
-                <li><a href="./Páginas/contacto.html">Contacto</a></li>
-            </ul>
+        <div class="container-fluid bg-black" style="--bs-bg-opacity: .92;">
+            <header class="container justify-content-between w-100">
+                <nav class="menu row justify-content-between align-items-center">
+                    <div class="col-md-3 col-6 col-sm-5">
+                        <a href="./index.html"><img class="Artemis_Logo animate__animated animate__fadeIn img-fluid" src="./Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
+                    </div>
+                    <div class="col-6 col-md-8">
+                        <button class="navbar-toggler d-md-none navbar-dark col-3 offset-9" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="./Páginas/nuestro-gin.html">Nuestro Gin</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Páginas/galería.html">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Páginas/recetas.html">Recetas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Páginas/contacto.html">Contacto</a>
+                                </li>
+                            </div>
+                          </div>
+                        <ul class="nav Nav-visible animate__animated animate__fadeIn d-none d-md-flex justify-content-end">
+                            <li class="nav-item"><a class="py-0 nav-link active link-light" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./Páginas/nuestro-gin.html">Nuestro Gin</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./Páginas/galería.html">Galería</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./Páginas/recetas.html">Recetas</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./Páginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>     
         </div>
-        <section class="Home_section">
-            <div class="grid-home">
-                <div class="grid-home-item description">GIN ARTEMIS, producto nacional, nacido en Córdoba. Su incomparable sabor es el resultado de la selección de botánicos naturales y el riguroso proceso de destilación. Elaborado artesanalmente a base de alcohol de cereales y enebro</div>
-                <div class="grid-home-item botella">
-                    <span>Contenido: 500 mL.</span> 
-                    <span>Peso: 500 gr</span>
-                    <span>Color: Marrón</span>
-                    <span>Tapon: Corcho sintético tipo T</span>
+                     
+        <section class="home-section">
+            <div class="grid-home container">
+                <div class="row pt-3">
+                    <div class="grid-home-item description col-6 col-md-8 fs-4 bg-dark text-white" style="--bs-bg-opacity: .7;"><span class="fs-3 fw-bold">GIN ARTEMIS</span>, producto nacional, nacido en Córdoba. Su incomparable sabor es el resultado de la selección de botánicos naturales y el riguroso proceso de destilación. Elaborado artesanalmente a base de alcohol de cereales y enebro
+                        <ul class="">
+                            <li class="">Contenido: 500 mL.</li>
+                            <li class="">Peso: 500 gr</li>
+                            <li class="">Color: Marrón</li>
+                            <li class="">Tapon: Corcho sintético tipo T</li>
+                          </ul>
+                    </div>
+                    <div class="grid-home-item botellaIMG col-6 col-md-3 offset-md-1"><img src="./Images/JMG6145.jpg" class="img-fluid"></div>
+                </div>    
+                <div class="grid-home-item cata row text-white bg-dark my-3 p-2" style="--bs-bg-opacity: .7;">Nota de la cata, aromas y visual.</div>
+                <div class="grid-home-item ingredientes row align-items-center bg-dark" style="--bs-bg-opacity: .7;">
+                    <div class="grid-ingredientes enebroIMG offset-md-1 col-md-2"><img class="img-fluid" src="./Images/bayas-enebro.png" alt="Enebro"></div>
+                    <div class="grid-ingredientes cascarasIMG col-md-2"><img class="img-fluid" src="./Images/cascaras.png" alt="Cascaras"></div>
+                    <div class="grid-ingredientes cardamomoIMG col-md-2"><img class="img-fluid" src="./Images/cardamomo.png" alt="Cardamomo"></div>
+                    <div class="grid-ingredientes canelaIMG col-md-2"><img class="img-fluid" src="./Images/canela.png" alt="Canela"></div>
+                    <div class="grid-ingredientes coriandroIMG col-md-2"><img class="img-fluid" src="./Images/coriandro.png" alt="Coriandro"></div>
                 </div>
-                <div class="grid-home-item botellaIMG"><img src="./Images/JMG6145.jpg"></div>
-                <div class="grid-home-item cata">Nota de la cata, aromas y visual.</div>
-                <div class="grid-home-item ingredientes">
-                    <div class="grid-ingredientes enebroIMG"><img src="https://aconcaguagin.com/wp-content/uploads/2021/03/1.jpg" alt="Enebro"></div>
-                    <div class="grid-ingredientes cascarasIMG"><img src="data:image/jpeg;base64,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" alt="Cascaras"></div>
-                    <div class="grid-ingredientes cardamomoIMG"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VBBzyWZjBhXx0KQGMcEZF-UIjcYhsZs4_UY21DV7333oyweB4gBin6jGjFGb6nKQDJk&usqp=CAU"></div>
-                    <div class="grid-ingredientes canelaIMG"><img src="data:image/jpeg;base64,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" alt="Canela"></div>
-                    <div class="grid-ingredientes coriandroIMG"><img src="https://sc04.alicdn.com/kf/UTB8zw9YFyaMiuJk43PTq6ySmXXas.jpg" alt="Coriandro"></div>
-                    <div class="grid-ingredientes enebro">Bayas de Enebro</div>            
-                    <div class="grid-ingredientes cascaras">Cáscaras de naranja y limón</div>                    
-                    <div class="grid-ingredientes cardamomo">Cardamomo</div>                    
-                    <div class="grid-ingredientes canela">Canela</div>
-                    <div class="grid-ingredientes coriandro">Coriandro</div>
+                <div class="row text-white justify-content-center bg-dark" style="--bs-bg-opacity: .7;">    
+                    <div class="grid-ingredientes enebro offset-md-0 col-md-2 text-center">Bayas de Enebro</div>            
+                    <div class="grid-ingredientes cascaras col-md-2 text-center">Cáscaras de naranja y limón</div>                    
+                    <div class="grid-ingredientes cardamomo col-md-2 text-center">Cardamomo</div>                    
+                    <div class="grid-ingredientes canela col-md-2 text-center">Canela</div>
+                    <div class="grid-ingredientes coriandro col-md-2 text-center">Coriandro</div>
                 </div>
-                <div class="grid-home-item contacto">Contactos útiles MAXI GASTON</div>
+                <div class="grid-home-item contacto text-white">Contactos útiles MAXI GASTON</div>
             </div>
         </section>
         <footer>
@@ -78,5 +108,7 @@
                 <p id="copyright">Copyright 2022</p>
             </div>
         </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>

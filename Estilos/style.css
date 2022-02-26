@@ -57,7 +57,7 @@ ul.Nav li a{
     padding: 10px 10px 0px 10px;
     position: relative;
 }
-.Nav a::after{
+.Nav li::after{
     display: block;
     content: "";/* el content lo agrego para que se active el pseudoelemento, si no, no muestra nada */
     width: 0%;
