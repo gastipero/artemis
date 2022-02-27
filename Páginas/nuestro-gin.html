@@ -18,48 +18,86 @@
 
     </head>
     <body>
-        <header>
-            <nav class="menu">
-                <a href="../index.html"><img class="Artemis_Logo animate__animated animate__fadeIn" src="../Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
-                <button class="boton">
-                    <a href="#nav-target"><i class="fas fa-bars"></i></a>
-                </button>
-                <ul class="Nav Nav-visible animate__animated animate__fadeIn">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a class="active" href="../Páginas/nuestro-gin.html">Nuestro Gin</a></li>
-                    <li><a href="../Páginas/galería.html">Galería</a></li>
-                    <li><a href="../Páginas/recetas.html">Recetas</a></li>
-                    <li><a href="../Páginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>              
-        </header>
-        <div class="Nav-responsive" id="nav-target">
-            <a href="#" class="close-button">X</a>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="../Páginas/nuestro-gin.html">Nuestro Gin</a></li>
-                <li><a href="../Páginas/galería.html">Galería</a></li>
-                <li><a href="../Páginas/recetas.html">Recetas</a></li>
-                <li><a href="../Páginas/contacto.html">Contacto</a></li>
-            </ul>
-        </div>        
-        <main class="Home_Nuestro grid-container2">
-            <div class="grid-item2 ingredientes">Ingredientes</div>
-            <div class="grid-item2 ingredientes1"><a href="https://es.wikipedia.org/wiki/Elettaria_cardamomum" target="_blank">Cardamomo</a> <a href="https://es.wikipedia.org/wiki/Juniperus_communis" target="_blank">enebro</a> <a href="https://es.wikipedia.org/wiki/Cinnamomum_verum" target="_blank">canela</a></div>
-            <div class="grid-item2 ingredientes2"><a href="https://es.wikipedia.org/wiki/Salvia_rosmarinus">Romero</a> <a href="">laurel</a></div>
-            <div class="grid-item2 ingredientes3"><a href="https://es.wikipedia.org/wiki/C%C3%A1scara_(ingrediente)">Cáscara de naranja y limon</a></div> 
-        </main>
+        <div class="container-fluid bg-black" style="--bs-bg-opacity: .92;">
+            <header class="container justify-content-between w-100">
+                <nav class="menu row justify-content-between align-items-center">
+                    <div class="col-md-3 col-6 col-sm-5">
+                        <a href="../index.html"><img class="Artemis_Logo animate__animated animate__fadeIn img-fluid" src="../Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
+                    </div>
+                    <div class="col-6 col-md-8">
+                        <button class="navbar-toggler d-md-none navbar-dark col-3 offset-9" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Nuestro Gin</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./galería.html">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./recetas.html">Recetas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </div>
+                          </div>
+                        <ul class="nav Nav-visible animate__animated animate__fadeIn d-none d-md-flex justify-content-end">
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link active link-light" href="./nuestro-gin.html">Nuestro Gin</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./galería.html">Galería</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./recetas.html">Recetas</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>     
+        </div>
+        <main>
+            <div class="container-fluid Home_Nuestro">
+                <div class="container">
+                            <div class="row">
+                                
+                                <div class="grid-item2 ingredientes col-4 offset-4 text-center bg-artemis mt-3">Ingredientes</div>
+                                <ul class="list-group list-group-flush col-10 offset-1 col-md-8 offset-md-0">
+                                    <li class="list-group-item"><img src="../Images/bayas-enebro.png" width="70px"><a class="text-decoration-none" href="https://es.wikipedia.org/wiki/Juniperus_communis" target="_blank"><span>Enebro:</span></a> El principal botánico de nuestro gin, indispensable para su aroma particular.</li>
+                                    <li class="list-group-item list-group-item-action list-group-item-dark"><img src="../Images/cardamomo.png" width="70px"><a class="text-decoration-none" href="https://es.wikipedia.org/wiki/Elettaria_cardamomum" target="_blank"><span>Cardamomo:</span></a> Botánico con fuerte aroma, con sabores detectables en nuestro gin</li>
+                                    <li class="list-group-item"><img src="../Images/canela.png" width="70px"><a class="text-decoration-none" href="https://es.wikipedia.org/wiki/Cinnamomum_verum" target="_blank">Canela:</a> La rama de canela otorga un balance final al gin para poder disfrutar su maravilloso sabor</li>
+                                    <li class="list-group-item"><img src="../Images/cascaras.png" width="70px"><a class="text-decoration-none" href="https://es.wikipedia.org/wiki/C%C3%A1scara_(ingrediente)" target="_blank"><span>Cáscara de naranja y limon:</span></a> Estas dan la nota cítrica que caracteriza a nuestro gin </li>
+                                </ul>
+                                <div class="col-6 offset-3 col-md-4 offset-md-0"><img src="../Images/foto-sur.jpg" class="img-fluid"></div>
+                           
+                            </div>
 
+                </div>
+            </div>
+        </main>
         <footer>
-            <div class="aclaraciones">
-                <p>beber con moderación | prohibida su venta a menores de 18 años | si conducis, no tomes alcohol</p>
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/destileria.artemis/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="autor">
-                <p id="autor">autor: Gaston Pero</p>
-                <p id="copyright">Copyright 2022</p>
+            <div class="container-fluid bg-artemis">
+                <div class="container pt-3">
+                    <div class="row">
+                        <div class="aclaraciones col-md-6 col-8">
+                            <p class="text-white text-uppercase">beber con moderación | prohibida su venta a menores de 18 años | si conducis, no tomes alcohol</p>
+                        </div>
+                        <div class="social-media col-1 fs-1 offset-md-5 offset-3">
+                            <a href="https://www.instagram.com/destileria.artemis/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        <div class="autor">
+                            <p class="text-white text-uppercase my-0" id="autor">autor: Gaston Pero</p>
+                            <p class="text-white text-uppercase" id="copyright">Copyright 2022</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="https://kit.fontawesome.com/41d6bd0b26.js" crossorigin="anonymous"></script>

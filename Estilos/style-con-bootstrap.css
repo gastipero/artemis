@@ -47,7 +47,8 @@
     text-align: justify;
 }
 
-.home-section {
+.home-section, 
+.Home_Nuestro {
     background-image: url(https://images.adsttc.com/media/images/5c04/7566/08a5/e5c7/1100/01c2/large_jpg/12247681_10156151865110702_6739505303249166555_o.jpg?1543796058);
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,6 +66,15 @@
     text-align: justify;
 }
 
+
+/* Nuestro gin */
+
+.ingredientes {
+    font-size: 50px;
+    color: white;
+
+    font-family: 'Bebas Neue', cursive;
+}
 
 @media screen and (max-width: 1200px) {
     .Nav-visible a{
