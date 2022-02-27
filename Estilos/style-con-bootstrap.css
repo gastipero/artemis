@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.bg-artemis {
+    background-color: rgba(17,21,23,1);
+}
+
 .Nav-visible.animate__animated.animate__fadeIn {
     animation-delay: 0.5s;
 }
@@ -50,14 +54,51 @@
     background-position: center;
 }
 
-@media (max-width: 1200px) {
+.description {
+    font-size: 30px;
+}
+
+.aclaraciones {
+    text-align: justify;
+}
+.autor {
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 1200px) {
     .Nav-visible a{
         font-size: 23px;
     }
+    .description {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .Nav-visible a{
         font-size: 18px;
+    }
+    .description {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 762px) {
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .description {
+        font-size: 18px;
+    }
+    .aclaraciones {
+        font-size: 70%;
+    }
+    .autor {
+        font-size: 70%;
     }
 }
