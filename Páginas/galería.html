@@ -5,178 +5,465 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Artemis, Gin, Handcrafted, bebida, alcohol, escabio">
         <meta name="description" content="Página oficial de Artemis Handcrafted Gin.">
-        <title>Artemis Handcrafted Gin - Galería</title> 
-        <link rel="stylesheet" href="../Estilos/style.css">
+        <title>Artemis Handcrafted Gin - Home</title> 
+        <!-- <link rel="stylesheet" href="../Estilos/style.css"> -->
+        <link rel="stylesheet" href="../Estilos/style-con-bootstrap.css">
         <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
-        <script src="https://kit.fontawesome.com/41d6bd0b26.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+         <!-- Bootstrap CSS -->
+        <link href="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     </head>
     <body>
-        <header>
-            <nav class="menu">
-                <a href="../index.html"><img class="Artemis_Logo animate__animated animate__fadeIn" src="../Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
-                <button class="boton">
-                    <a href="#nav-target"><i class="fas fa-bars"></i></a>
-                </button>
-                <ul class="Nav Nav-visible animate__animated animate__fadeIn">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Páginas/nuestro-gin.html">Nuestro Gin</a></li>
-                    <li><a class="active" href="../Páginas/galería.html">Galería</a></li>
-                    <li><a href="../Páginas/recetas.html">Recetas</a></li>
-                    <li><a href="../Páginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>              
-        </header>
-        <div class="Nav-responsive" id="nav-target">
-            <a href="#" class="close-button">X</a>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Páginas/nuestro-gin.html">Nuestro Gin</a></li>
-                <li><a class="active" href="../Páginas/galería.html">Galería</a></li>
-                <li><a href="../Páginas/recetas.html">Recetas</a></li>
-                <li><a href="../Páginas/contacto.html">Contacto</a></li>
-            </ul>
+        <div class="container-fluid bg-black" style="--bs-bg-opacity: .92;">
+            <header class="container justify-content-between w-100">
+                <nav class="menu row justify-content-between align-items-center">
+                    <div class="col-md-3 col-6 col-sm-5">
+                        <a href="../index.html"><img class="Artemis_Logo animate__animated animate__fadeIn img-fluid" src="../Images/Artemis Negro 2.png" alt="Logo Artemis"></a>
+                    </div>
+                    <div class="col-6 col-md-8">
+                        <button class="navbar-toggler d-md-none navbar-dark col-3 offset-9" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="./nuestro-gin.html">Nuestro Gin</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./galería.html">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./recetas.html">Recetas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </div>
+                          </div>
+                        <ul class="nav Nav-visible animate__animated animate__fadeIn d-none d-md-flex justify-content-end">
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./nuestro-gin.html">Nuestro Gin</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link active link-light" href="./galería.html">Galería</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./recetas.html">Recetas</a></li>
+                            <li class="nav-item"><a class="py-0 nav-link link-light" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>     
         </div>
-        <section class="Home_section" id="sec_galery">
-            <div class="Video">
-                <h2>¿Cómo preparo un buen gin?</h2>
-                <iframe width="420" height="240" src="https://www.youtube.com/embed/bh6AcRrnKhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>            
-            <div class="galeria_principal">
-                <a href="#target1"><video src="../Images/4MOV.MOV" autoplay loop height="200px"></video></a>
-                <a href="#target2"><img src="../Images/JMG6125.jpg" alt="Imagen gin" height="200px"></a>
-                <a href="#target3"><img src="../Images/JMG6063.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target4"><img src="../Images/JMG6074.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target5"><img src="../Images/JMG6080.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target6"><img src="../Images/JMG6082.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target7"><img src="../Images/JMG6094.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target8"><img src="../Images/JMG6100.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target9"><img src="../Images/JMG6102.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target10"><img src="../Images/JMG6110.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target11"><img src="../Images/JMG6112.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target12"><img src="../Images/JMG6131.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target13"><img src="../Images/JMG6133.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target14"><img src="../Images/JMG6139.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target15"><img src="../Images/JMG6142.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target16"><img src="../Images/JMG6145.jpg" alt="Galería gin" height="200px"></a>
-                <a href="#target17"><img src="../Images/JMG6154.jpg" alt="Galería gin" height="200px"></a>
-            </div>
-            <div class="galeria_target" id="target1">
-                <a href="#target17" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <video src="../Images/4MOV.MOV" autoplay loop></video>
-                <a href="#target2" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target2">
-                <a href="#target1" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6125.jpg" alt="Imagen gin">
-                <a href="#target3" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target3">
-                <a href="#target2" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6063.jpg" alt="Galería gin">
-                <a href="#target4" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target4">
-                <a href="#target3" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6074.jpg" alt="Galería gin">
-                <a href="#target5" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target5">
-                <a href="#target4" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6080.jpg" alt="Galería gin">
-                <a href="#target6" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target6">
-                <a href="#target5" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6082.jpg" alt="Galería gin">
-                <a href="#target7" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target7">
-                <a href="#target6" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6094.jpg" alt="Galería gin">
-                <a href="#target8" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target8">
-                <a href="#target7" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6100.jpg" alt="Galería gin">
-                <a href="#target9" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target9">
-                <a href="#target8" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6102.jpg" alt="Galería gin">
-                <a href="#target10" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target10">
-                <a href="#target9" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6110.jpg" alt="Galería gin">
-                <a href="#target11" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target11">
-                <a href="#target10" class="flecha"><i class="fas fa-arrow-left"></i></a>    
-                <img src="../Images/JMG6112.jpg" alt="Galería gin">
-                <a href="#target12" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target12">
-                <a href="#target11" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6131.jpg" alt="Galería gin">
-                <a href="#target13" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target13">
-                <a href="#target12" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6133.jpg" alt="Galería gin">
-                <a href="#target14" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target14">
-                <a href="#target13" class="flecha"><i class="fas fa-arrow-left"></i></a>   
-                <img src="../Images/JMG6139.jpg" alt="Galería gin">
-                <a href="#target15" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target15">
-                <a href="#target14" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6142.jpg" alt="Galería gin">
-                <a href="#target16" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>    
-            <div class="galeria_target" id="target16">
-                <a href="#target15" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6145.jpg" alt="Galería gin">
-                <a href="#target17" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
-            </div>
-            <div class="galeria_target" id="target17">
-                <a href="#target16" class="flecha"><i class="fas fa-arrow-left"></i></a>
-                <img src="../Images/JMG6154.jpg" alt="Galería gin">
-                <a href="#target1" class="flecha"><i class="fas fa-arrow-right"></i></a>
-                <a href="#" class="close-button">X</a>
+        <section id="sec_galery">
+            <div class="container-fluid galery-section">
+                <div class="container">
+                    <div class="Video row justify-content-center">
+                        <div class="col-8 offset-2 col-xl-6 offset-xl-3"><h2>¿Cómo preparo un buen gin?</h2></div>
+                        <div class="col-10 offset-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3"><iframe width="420" height="240" src="https://www.youtube.com/embed/bh6AcRrnKhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
+                    </div>           
+                    <div id="carouselExampleControls" class="galeria_principal d-lg-none row carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><video class="d-block w-100 img-fluid" src="../Images/4MOV.MOV" autoplay loop></video></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6125.jpg" alt="Imagen gin"></div>                        
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6063.jpg" alt="Galería gin" height="200px"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6074.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6080.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6082.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6094.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6100.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6102.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6110.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6112.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6131.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6133.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6139.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6142.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6145.jpg" alt="Galería gin"></div>
+                            <div class="carousel-item"><img class="d-block w-100 img-fluid" src="../Images/JMG6154.jpg" alt="Galería gin"></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="row d-none d-lg-flex justify-content-center">
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal0">
+                                <video class="img-fluid" src="../Images/4MOV.MOV" autoplay loop height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <video class="" src="../Images/4MOV.MOV" autoplay loop height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <img class="img-fluid" src="../Images/JMG6125.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6125.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal02">
+                                <img class="img-fluid" src="../Images/JMG6063.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6063.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <img class="img-fluid" src="../Images/JMG6074.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6074.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                <img class="img-fluid" src="../Images/JMG6080.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6080.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                <img class="img-fluid" src="../Images/JMG6082.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6082.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                <img class="img-fluid" src="../Images/JMG6094.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6094.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                <img class="img-fluid" src="../Images/JMG6100.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6100.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                <img class="img-fluid" src="../Images/JMG6102.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6102.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                <img class="img-fluid" src="../Images/JMG6110.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6110.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                                <img class="img-fluid" src="../Images/JMG6112.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6112.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal10">
+                                <img class="img-fluid" src="../Images/JMG6131.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6131.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal11">
+                                <img class="img-fluid" src="../Images/JMG6133.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6133.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                                <img class="img-fluid" src="../Images/JMG6139.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6139.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal13">
+                                <img class="img-fluid" src="../Images/JMG6142.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6142.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal14">
+                                <img class="img-fluid" src="../Images/JMG6145.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6145.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">    
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal15">
+                                <img class="img-fluid" src="../Images/JMG6154.jpg" alt="Galería gin" height="200px">
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body d-flex justify-content-center">
+                                            <img class="" src="../Images/JMG6154.jpg" alt="Galería gin" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <footer>
-            <div class="aclaraciones">
-                <p>beber con moderación | prohibida su venta a menores de 18 años | si conducis, no tomes alcohol</p>
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/destileria.artemis/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="autor">
-                <p id="autor">autor: Gaston Pero</p>
-                <p id="copyright">Copyright 2022</p>
+            <div class="container-fluid bg-artemis">
+                <div class="container pt-3">
+                    <div class="row">
+                        <div class="aclaraciones col-md-6 col-8">
+                            <p class="text-white text-uppercase">beber con moderación | prohibida su venta a menores de 18 años | si conducis, no tomes alcohol</p>
+                        </div>
+                        <div class="social-media col-1 fs-1 offset-md-5 offset-3">
+                            <a href="https://www.instagram.com/destileria.artemis/" target="_blank"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                        <div class="autor">
+                            <p class="text-white text-uppercase my-0" id="autor">autor: Gaston Pero</p>
+                            <p class="text-white text-uppercase" id="copyright">Copyright 2022</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
+        <script src="https://kit.fontawesome.com/41d6bd0b26.js" crossorigin="anonymous"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
+</html>
