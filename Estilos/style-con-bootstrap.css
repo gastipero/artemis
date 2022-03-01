@@ -8,8 +8,16 @@
     background-color: rgba(17,21,23,1);
 }
 
+.bg-artemis-transp {
+    background-color: rgba(17,21,23,0.8);
+}
+
 .font-artemis {
     font-family: 'Bebas Neue', cursive;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .Nav-visible.animate__animated.animate__fadeIn {
@@ -53,7 +61,8 @@
 
 .home-section, 
 .Home_Nuestro,
-.galery-section {
+.galery-section,
+.section-recetas {
     background-image: url(https://images.adsttc.com/media/images/5c04/7566/08a5/e5c7/1100/01c2/large_jpg/12247681_10156151865110702_6739505303249166555_o.jpg?1543796058);
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +90,12 @@
     font-family: 'Bebas Neue', cursive;
 }
 
+/* Recetas */
+
+#Titulo {
+    font-size: 40px;
+}
+
 @media screen and (max-width: 1200px) {
     .Nav-visible a{
         font-size: 23px;
@@ -103,6 +118,10 @@
 @media screen and (max-width: 762px) {
     .description {
         font-size: 20px;
+    }
+    .negroni {
+        font-size: 30px;
+        text-align: center;
     }
 }
 
