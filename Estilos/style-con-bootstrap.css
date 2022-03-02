@@ -144,8 +144,8 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 470px) {
     .Video iframe {
-        width: 75%;
+        width: 95%;
     }
 }
