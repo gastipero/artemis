@@ -1,0 +1,11 @@
+$fondo-artemis:rgba(17,21,23,1);
+$fondo-artemis-transp: rgba(17,21,23,0.8);
+
+/* Características generales */
+.bg-artemis {
+    background-color: $fondo-artemis;
+}
+
+.bg-artemis-transp {
+    background-color: $fondo-artemis-transp;
+}

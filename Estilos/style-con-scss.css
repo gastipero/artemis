@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* Características generales */
+.bg-artemis {
+  background-color: #111517; }
+
+.bg-artemis-transp {
+  background-color: rgba(17, 21, 23, 0.8); }
+
+.font-artemis {
+  font-family: "Bebas Neue", cursive; }
+
+.text-justify {
+  text-align: justify; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.Nav-visible.animate__animated.animate__fadeIn {
+  animation-delay: 0.5s; }
+
+.Nav-visible a {
+  color: white;
+  font-size: 35px;
+  font-family: 'Bebas Neue', cursive;
+  position: relative; }
+  .Nav-visible a.active::after {
+    width: 80%; }
+  .Nav-visible a::after {
+    display: block;
+    content: "";
+    width: 0%;
+    background: white;
+    height: 5px;
+    bottom: 0;
+    left: 10%;
+    position: absolute; }
+  .Nav-visible a:hover::after, .Nav-visible a:active::after, .Nav-visible a:focus::after {
+    transition: 0.3s;
+    width: 80%;
+    cursor: pointer; }
+
+.grid-home-item {
+  text-align: justify; }
+
+.home-section,
+.Home_Nuestro,
+.galery-section,
+.section-recetas,
+.sec_contact {
+  background-image: url(https://images.adsttc.com/media/images/5c04/7566/08a5/e5c7/1100/01c2/large_jpg/12247681_10156151865110702_6739505303249166555_o.jpg?1543796058);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.description {
+  font-size: 30px; }
+
+.aclaraciones {
+  text-align: justify; }
+
+.autor {
+  text-align: justify; }
+
+/* Nuestro gin */
+.ingredientes {
+  font-size: 50px;
+  color: white;
+  font-family: 'Bebas Neue', cursive; }
+
+/* Recetas */
+#Titulo {
+  font-size: 40px; }
+
+/* Galería */
+.Video iframe {
+  width: 420; }
+
+@media screen and (max-width: 1200px) {
+  .Nav-visible a {
+    font-size: 23px; }
+  .description {
+    font-size: 20px; } }
+
+@media screen and (max-width: 992px) {
+  .Nav-visible a {
+    font-size: 18px; }
+  .description {
+    font-size: 20px; } }
+
+@media screen and (max-width: 762px) {
+  .description {
+    font-size: 20px; }
+  .negroni {
+    font-size: 30px;
+    text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  .description {
+    font-size: 18px; }
+  .aclaraciones {
+    font-size: 70%; }
+  .autor {
+    font-size: 70%; } }
+
+@media screen and (max-width: 470px) {
+  .Video iframe {
+    width: 95%; } }
