@@ -1,5 +1,10 @@
-$fondo-artemis:rgba(17,21,23,1);
-$fondo-artemis-transp: rgba(17,21,23,0.8);
+$colores: (
+    fondo-primario: rgba(17,21,23,1),
+    fondo-primario-transp: rgba(17,21,23,0.8)
+);
+
+$fondo-artemis:map-get($colores,fondo-primario);
+$fondo-artemis-transp: map-get($colores,fondo-primario-transp);
 
 /* Características generales */
 .bg-artemis {

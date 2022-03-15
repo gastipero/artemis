@@ -86,9 +86,18 @@
     @extend .font-artemis;
 }
 
+.negroni {
+    @extend #Titulo
+}
+
 /* Galería */
 .Video iframe{
     width:420
+}
+
+/* Recetas */
+.titulo-contacto {
+    @extend .ingredientes
 }
 
 
@@ -111,12 +120,12 @@
 }
 
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 767px) {
     .description {
         font-size: 20px;
     }
     .negroni {
-        font-size: 30px;
+        font-size: 50px;
         text-align: center;
     }
 }
@@ -136,5 +145,9 @@
 @media screen and (max-width: 470px) {
     .Video iframe {
         width: 95%;
+    }
+
+    div textarea {
+        width: 100%;
     }
 }

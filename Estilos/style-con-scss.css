@@ -6,7 +6,7 @@
 .bg-artemis-transp {
   background-color: rgba(17, 21, 23, 0.8); }
 
-.font-artemis, .Nav-visible a, .ingredientes, #Titulo {
+.font-artemis, .Nav-visible a, .ingredientes, .titulo-contacto, #Titulo, .negroni {
   font-family: "Bebas Neue", cursive; }
 
 .text-justify {
@@ -63,12 +63,12 @@
   text-align: justify; }
 
 /* Nuestro gin */
-.ingredientes {
+.ingredientes, .titulo-contacto {
   font-size: 50px;
   color: white; }
 
 /* Recetas */
-#Titulo {
+#Titulo, .negroni {
   font-size: 40px;
   color: white; }
 
@@ -76,6 +76,7 @@
 .Video iframe {
   width: 420; }
 
+/* Recetas */
 @media screen and (max-width: 1200px) {
   .Nav-visible a {
     font-size: 23px; }
@@ -88,11 +89,11 @@
   .description {
     font-size: 20px; } }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 767px) {
   .description {
     font-size: 20px; }
   .negroni {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center; } }
 
 @media screen and (max-width: 576px) {
@@ -105,4 +106,6 @@
 
 @media screen and (max-width: 470px) {
   .Video iframe {
-    width: 95%; } }
+    width: 95%; }
+  div textarea {
+    width: 100%; } }
