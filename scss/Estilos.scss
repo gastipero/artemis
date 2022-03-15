@@ -1,5 +1,9 @@
 @import "colores.scss";
 @import "fuentes.scss";
+@mixin titulos($size, $color) {
+    font-size: $size;
+    color: $color;
+}
 
 
 * {
@@ -15,9 +19,8 @@
 }
 
 .Nav-visible a{
-    color: white;
-    font-size: 35px;
-    font-family: 'Bebas Neue', cursive;
+    @include titulos(35px, white);
+    @extend .font-artemis;
     position: relative;
     &.active::after{
         width: 80%;
@@ -72,16 +75,15 @@
 /* Nuestro gin */
 
 .ingredientes {
-    font-size: 50px;
-    color: white;
-
-    font-family: 'Bebas Neue', cursive;
+    @include titulos(50px, white);
+    @extend .font-artemis;
 }
 
 /* Recetas */
 
 #Titulo {
-    font-size: 40px;
+    @include titulos(40px, white);
+    @extend .font-artemis;
 }
 
 /* Galería */

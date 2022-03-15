@@ -6,7 +6,7 @@
 .bg-artemis-transp {
   background-color: rgba(17, 21, 23, 0.8); }
 
-.font-artemis {
+.font-artemis, .Nav-visible a, .ingredientes, #Titulo {
   font-family: "Bebas Neue", cursive; }
 
 .text-justify {
@@ -21,9 +21,8 @@
   animation-delay: 0.5s; }
 
 .Nav-visible a {
-  color: white;
   font-size: 35px;
-  font-family: 'Bebas Neue', cursive;
+  color: white;
   position: relative; }
   .Nav-visible a.active::after {
     width: 80%; }
@@ -66,12 +65,12 @@
 /* Nuestro gin */
 .ingredientes {
   font-size: 50px;
-  color: white;
-  font-family: 'Bebas Neue', cursive; }
+  color: white; }
 
 /* Recetas */
 #Titulo {
-  font-size: 40px; }
+  font-size: 40px;
+  color: white; }
 
 /* Galería */
 .Video iframe {
