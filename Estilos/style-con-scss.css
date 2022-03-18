@@ -6,7 +6,7 @@
 .bg-artemis-transp {
   background-color: rgba(17, 21, 23, 0.8); }
 
-.font-artemis, .Nav-visible a, .ingredientes, .titulo-contacto, #Titulo, .negroni {
+.font-artemis, .Nav-visible a, .ingredientes, .titulo-contacto, #Titulo, .contacto-home, .negroni {
   font-family: "Bebas Neue", cursive; }
 
 .text-justify {
@@ -62,13 +62,27 @@
 .autor {
   text-align: justify; }
 
+/* Home */
+.carrusel-home {
+  padding: 0px; }
+
+.foto-carrusel {
+  height: 87vh;
+  object-fit: cover; }
+
+.icon-contacto {
+  font-size: 30px; }
+
+.contacto-text {
+  font-size: 20px; }
+
 /* Nuestro gin */
 .ingredientes, .titulo-contacto {
   font-size: 50px;
   color: white; }
 
 /* Recetas */
-#Titulo, .negroni {
+#Titulo, .contacto-home, .negroni {
   font-size: 40px;
   color: white; }
 

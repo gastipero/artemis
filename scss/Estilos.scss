@@ -71,6 +71,26 @@
     text-align: justify;
 }
 
+/* Home */
+.carrusel-home {
+    padding: 0px;
+}
+.foto-carrusel {
+    height: 87vh;
+    object-fit: cover;
+}
+
+.contacto-home {
+    @extend #Titulo
+}
+
+.icon-contacto {
+    font-size: 30px;
+}
+
+.contacto-text {
+    font-size: 20px;
+}
 
 /* Nuestro gin */
 
