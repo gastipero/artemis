@@ -122,4 +122,6 @@
   .Video iframe {
     width: 95%; }
   div textarea {
-    width: 100%; } }
+    width: 100%; }
+  .icon-contacto, .contacto-text {
+    font-size: 100%; } }
