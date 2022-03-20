@@ -1,10 +1,20 @@
 @import "colores.scss";
 @import "fuentes.scss";
+$accordion-button-bg: $fondo-artemis;
+$accordion-button-active-bg: $fondo-artemis;
+$accordion-bg: $fondo-artemis-transp;
+$accordion-icon-active-color: grey;
+$accordion-border-width: 0px;
+$accordion-color: white;
+$accordion-button-active-color: white;
+$accordion-button-active-bg: black;
+
+
+@import "./bootstrap.scss";
 @mixin titulos($size, $color) {
     font-size: $size;
     color: $color;
 }
-
 
 * {
     margin: 0px;
@@ -12,10 +22,6 @@
     box-sizing: border-box;
 }
 
-
-.navbar-toggler{
-    border-style: none;
-}
 .Nav-visible.animate__animated.animate__fadeIn {
     animation-delay: 0.5s;
 }
@@ -75,10 +81,10 @@
 
 /* Home */
 .carrusel-home {
-    padding: 0px;
+    padding-top: 20px;
 }
 .foto-carrusel {
-    height: 87vh;
+    height:83vh;
     object-fit: cover;
 }
 
@@ -101,6 +107,11 @@
     @extend .font-artemis;
 }
 
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
 /* Recetas */
 
 #Titulo {
@@ -113,8 +124,10 @@
 }
 
 /* Galería */
+
 .Video iframe{
-    width:420
+    width: 560px;
+    height: 315px;
 }
 
 /* Recetas */
@@ -138,6 +151,10 @@
     }
     .description {
         font-size: 20px;
+    }
+    .Video iframe{
+        width: calc(560px/1.3);
+        height: calc(315px/1.3);
     }
 }
 

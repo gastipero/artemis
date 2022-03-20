@@ -2,3 +2,4 @@
 o
 Archivos que no quiero que se muestren en mi repositorio.
 /node_modules/
+/bootstrap-5.1.3/
