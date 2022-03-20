@@ -17,6 +17,9 @@
   padding: 0px;
   box-sizing: border-box; }
 
+.navbar-toggler {
+  border-style: none; }
+
 .Nav-visible.animate__animated.animate__fadeIn {
   animation-delay: 0.5s; }
 
